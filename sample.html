@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>sliders</title>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+
+</head>
+<script>
+	let slider = 1;
+	let totalSlider = 4;
+	let output = document.getElementById('output')
+    
+
+	function previousSlide (){
+
+		if(slider>1){
+		slider = slider-1;
+       document.getElementById('output').src = "images/"+slider+".jpeg";
+   document.getElementById("left").removeAttribute("disabled")
+
+	}
+	
+}
+
+
+	 function nextSlide (){
+	 	if(slider<4){
+       slider = slider+1;
+       document.getElementById('output').src = "images/"+slider+".jpeg";
+    
+	 }
+	
+	}
+</script>
+<body>
+	
+ <div class="slider">
+ 	<div class="slider-container">
+ 		<button  id="left" onclick="previousSlide()" class="left">&lt;</button>
+ 		<img src="images/1.jpeg" class="image-slider" id="output" >
+ 		<button  id="right" onclick="nextSlide()" class="right">&gt;</button>
+ 	</div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>speak</title>
+   
+</head>
+
+<body>
+ <textarea name="text" id="text" cols="40" rows="20"></textarea>
+ <button  id="play">Speak</button>
+  <script defer>
+    const speakBtn=document.querySelector("#play");
+    const text = document.querySelector("textarea");
+
+
+    speakBtn.addEventListener("click",()=>{
+        const speech=new SpeechSynthesisUtterance();
+        speech.text=text.value
+        speechSynthesis.speak.(speech);
+    })
+    </script>
+</body>
+</html>

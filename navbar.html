@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>navbar</title>
+</head>
+<style type="text/css">
+	*{
+		text-decoration: none;
+	}
+ .navbar{
+  background-color: black;
+  font-family: monospace;
+
+ }
+
+.divnav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.logo{
+	color: white;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 20px;
+}
+li{
+	list-style: none;
+	display: inline-block;
+}
+li a{
+	color: white;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 25px;
+}
+button{
+	background-color: black;
+	margin-left: 20px;
+	border-radius: 50px;
+	border-color: white;
+}
+button a{
+	color: white;
+	font-size: 20px;
+
+}
+</style>
+<body>
+<nav class="navbar"> 
+	<div class="divnav"> 
+	<div class="logo"><a href="#">Siva</div>
+	<ul>
+		<li><a href="#">Home</li>
+			<li><a href="#">About</li>
+				<li><a href="#">Contact</li>
+					<li><a href="#">Services</li>
+				<button><a href="#">SignIn</button>
+				<button><a href="#">SignUp</button>
+
+	</ul>
+	</div>
+</nav>
+</body>
+</html>
